@@ -18,10 +18,5 @@ console.log(cName);
 //    city: "tokyo",
 // };
 
-
-[
-    {},
-    {},
-    {}
-]
+[{}, {}, {}];
 //jsonformatter-> tree
