@@ -1,0 +1,48 @@
+javascript execution context
+{}--> global execution text; this
+single threaded
+
+three types of execution context:
+1.Global execution context
+2.functional execution context
+3.eval execution 
+
+
+1.{}-memory creation phase
+2.execution phase
+
+//steps of executing code
+step 1- global execution context allocated in 'this'
+
+
+step2 =memory phase
+val1=undefines
+val2=undefined
+addNum= function definition
+result1=undefined
+result2-undefined
+
+step 3
+execution phase
+val1=10
+val2=5
+
+addNum() --- again create executional context
+box= new variable env + execution thread
+=>delete if done--
+
+addNum() memory phase and execution phase
+memory phase->
+val1=undefined
+val2=undefined
+total=undefined
+
+
+
+//call stack
+
+
+
+
+
+
