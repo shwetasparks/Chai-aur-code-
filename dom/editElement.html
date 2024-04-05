@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body style="background-color: aquamarine; color: rgb(41, 46, 46)">
+      <ul class="langange">
+         <li>javascript</li>
+      </ul>
+   </body>
+   <script>
+      function addLanguage(langName) {
+         const li = document.createElement("li");
+         li.innerHTML = `${langName}`;
+         document.querySelector(".langange").appendChild(li); //need it to traverse whole node tree
+      }
+      addLanguage("python");
+      addLanguage("html");
+
+      function optimalLang(langName) {
+         const li = document.createElement("li");
+
+         li.appendChild(document.createTextNode(langName));
+         const secondLang = document.querySelector(".language").appendChild(li);
+      }
+      optimalLang("golang");
+
+      //edit
+      const firstLang = document.createSelector("li:nth-child(2)");
+      firstLang.outerHTML = "<li> typescript</li>";
+
+      //remove
+      const lastLang = document.querySelector("li:last-child");
+      lastLang.remove();
+   </script>
+</html>
