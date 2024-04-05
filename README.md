@@ -1,2 +1,2 @@
-﻿# Chai-aur-code: Learing Notes
- https://www.youtube.com/@chaiaurcode
+﻿# Chai-aur-code: Learning Notes
+Source: https://www.youtube.com/@chaiaurcode
