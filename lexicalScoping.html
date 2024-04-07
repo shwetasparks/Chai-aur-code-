@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         // function init(){
+         //     let name="mozilla";
+         //     function displayedName(){
+         //         console.log(name);
+         //     }
+         //     displayedName()
+
+         // }
+         // init()
+         //lexical scoping
+         function outer() {
+            let username = "shweta";
+            // console.log(secret) //parent to children
+            function inner() {
+                let secret="123"
+               console.log("inner", username);
+            }
+            function innerTwo() {
+               console.log("innerTwo", username);
+            //    console.log(secret); //can't share from children to choildren
+            }
+            inner();
+            innerTwo();
+         }
+         outer();
+         //  console.log("too outer", username);
+      </script>
+   </body>
+</html>
