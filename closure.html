@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <button id="orange">Orange</button>
+      <button id="green">Green</button>
+   </body>
+   <script>
+      // document.getElementById("orange").click=function(){
+      //     document.body.style.backgroundColor="orange";
+      // };
+
+      //  document.getElementById("green").click=function(){
+      //     document.body.style.backgroundColor="green";
+      // };
+
+
+      //closure real world
+      function clickHandler(color) {
+         // document.body.style.backgroundColor=`${color}`;
+         return function () {
+            document.body.style.backgroundColor = `${color}`;
+         };
+      }
+      document.getElementById("orange").onClick = clickHandler("orange");
+   </script>
+</html>
